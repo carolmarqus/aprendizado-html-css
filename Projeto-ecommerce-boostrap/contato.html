@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Fonts Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"&gt;>
+    <link rel="preconnect" href="https://fonts.gstatic.com&quot; crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap&quot; rel="stylesheet">
+    <!-- CSS -->   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrapIcons.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Javascript-->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <title>Senai Watch</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg primary-bg-color" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Senai Watch</a>
+
+            <div id="navbar-itens">
+                <div></div>
+                <form class="d-flex" id="search-form">
+                    <i class="bi bi-search primary-color"></i>
+                    <input type="text" placeholder="Busque o seu relógio..." class="form-control" aria-label="Search">
+                    <button class="btn secondary-bg-color" type="submit">Pesquisar</button>
+                </form>
+
+                <ul class="navbar-nav mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-heart"></i>
+                        </a>
+                        <span class="qty-info">3</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-bag"></i>
+                            <b>R$ 540,56</b>
+                        </a>
+                        <span class="qty-info">2</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg secondary-bg-color" id="bottom-navbar-container">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar"
+                aria-expanded="false" aria-label="Navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="produtos.html" class="nav-link">Produtos</a>
+                </li>
+                <li>
+                    <a href="promocoes.html" class="nav-link">Promoções</a>
+                </li>
+                <li>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--formulario de contato com validação js-->
+    <form>
+<div class="container-fluid" id="valida-container">
+<div class="container">
+    <div class="col-12">
+            <h2>Formulário de Contato</h2>
+    </div>
+</div>
+<div class="container">
+    <div class="col-6">
+<label for="nome" class="form-label"> Nome:</label> 
+<input type="text" class="form-control" id="nome" name="nome" required>
+    </div>
+    <div id="nome_erro"></div>
+
+    <div class="col-6">
+<label for="CPF" class="form-label">CPF:</label>
+<input type="text" class="form-control" id="CPF" name="CPF" required>
+    </div>    
+    <div id="cpf_erro"></div>
+
+    <div class="col-6">
+<label for="telefone" class="form-label">Telefone:</label>
+<input type="tel" class="form-control" id="telefone" name="telefone" required>
+    </div> 
+    <div id="telefone_erro"></div>
+
+    <div class="col-6">
+<label for="email" class="form-label">E-mail:</label>
+<input type="email" class="form-control" id="email" name="email" required> 
+    <div id="email_erro"></div>
+
+    <div class="col-6">
+<label for="observacoes" class="form-label">Observações:</label>
+<input type="text" class="form-control" id="obseracoes" name="observacoes"
+            aria-describedat="campoobservacao" required maxlength="500">
+    <div id="campoobservacao" class="form-text">Conte conosco para ajudar você!</div>
+    </div> 
+
+<div class="row">
+    <div class="col-6">
+        <label for="selecao" class="form-label">Serviço:</label>
+        <select name="selecao">
+            <option value="">Selecione uma opção</option>
+            <option value="1">Entregas</option>
+            <option value="2">Trocas e devoluções</option>
+            <option value="3">Trabalhe conosco</option>
+            <option value="4">Reclamações</option>
+            <option value="5">Outra opção</option>
+        </select>
+    </div>
+    </div>
+     <div class="mt-lg-5"></div>
+        <div class="row">
+    <div class="col-6">
+        <div>Você aceita receber noticias via email e whatsapp ?</div>
+        <div>
+            <input type="radio" id="receber1" name="receber" value="1">
+            <div>aceito receber as noticias</div>
+            <input type="radio" id="receber2" name="receber" value="2">
+            <div>não aceito receber noticias</div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div>Como conheceu nossa empresa?</div>
+        <div>
+            <input type="checkbox" name="redessociais" value="1">
+            <label for="redessociais">Redes sociais</label>
+        </div>
+        <div>
+            <input type="checkbox" name="indicacao" value="2">
+            <label for="indicacao">Indicação de amigos</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Outdoor" value="3">
+            <label for="Outdoor">Outdoor/cartazes</label>
+        </div>
+    </div>
+        </div>
+    
+    <!--botões do final do formulario--> 
+    <div class="mt-lg-5"></div>
+    <!--quebra de linha-->
+            <div class="container">
+            <div class="row">
+    <div class="col-4">
+    </div>
+    <!--div vazia na linha para criar espaço-->
+    <div class="col-2">                
+    <button type="submit" name="enviar" id="enviar">Enviar</button>               
+    </div>
+    <div class="col-2">                
+    <button type="reset" name="cancelar" id="cancelar">Cancelar</button>               
+    </div>
+    <div class="col-4">
+    </div>
+            </div>
+            </div>    
+            <div class="mt-lg-5"></div>
+</div>
+</div>
+</form>
+
+
+<!--footer-->
+    <footer id="footer">
+        <div class="container-fluid" id="footer-links-container">
+            <div class="row">
+                <div class="col-12 col-md-4 footer-column">
+                    <h3>Páginas</h3>
+                    <ul class="list-unstyle">
+                        <li class="mb-2"><a href="#" class="primary-color">Home</a></li>
+                        <li class="mb-2"><a href="#" class="primary-color">Produtos</a></li>
+                        <li class="mb-2"><a href="#" class="primary-color">Promoções</a></li>
+                        <li class="mb-2"><a href="#" class="primary-color">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 footer-column" id="footer-center">
+                    <h3>Senai Watch</h3>
+                    <p class="primary-color">fale conosco!</p>
+                    <p class="telefone" id="tel"><i class="bi bi-telephone"></i> (61) 9999-9999</p>
+                </div>
+                <div class="col-12 col-md-4 footer-column">
+                    <h3>Informações</h3>
+                    <ul class="list-unstyle">
+                        <li class="mb-2"><a href="#" class="primary-color">Privacidade</a></li>
+                        <li class="mb-2"><a href="#" class="primary-color">Termo de uso</a></li>
+                        <li class="mb-2"><a href="#" class="primary-color">Ofertas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <!--lista de transmição do site(cadastro)-->
+            <div class="container-fluid" id="newsletter-container">
+                <div class="col-12">
+                    <div class="row">
+                        <p >Se inscreva na nossa Newsletter</p>
+                        <form class="d-flex" id="formulario">
+                            <i class="bi bi-envelope light-color"></i>
+                            <input type="email" class="form-control" placeholder="Informe o seu email">
+                            <button class="btn light-bg-color" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12" id="social-container">
+                    <a href="#"><i class="bi bi-facebook cordosicon"></i></a>
+                    <a href="#"><i class="bi bi-instagram cordosicon"></i></a>
+                    <a href="#"><i class="bi bi-twitter cordosicon"></i></a>
+                    <a href="#"><i class="bi bi-youtube cordosicon"></i></a>
+                </div>
+            </div>
+            <div class="container" id="copy-container">
+                <p>Todos os direitos reservados @2021 <span class="primary-color">Senai Watch</span></p>
+            </div>
+        </footer>
+<script type="text/javascript">
+    var nome = document.getElementById("nome");
+    var nomeValidation = function(){
+            
+        nomeValue = nome.value.trim();
+        validnome = /^([a-zA-ZÀ-ú']{2,40}(\s+|$))$/;
+        nomeErr = document.getElementById('nome_erro');
+            
+        if(nomeValue == ""){
+             nomeErr.innerHTML = "Informe o nome completo";
+        }else if(!validnome.test(nomeValue)){
+                nomeErr.innerHTML = "O nome deve conter apenas letras e não deve conter espaço em branco";
+        }else{
+                nomeErr.innerHTML = "";
+        return true;
+            }
+                                  }
+            
+            nome.oninput = function(){
+                nomeValidation();
+           
+}
+var CPF = document.getElementById("CPF");
+var cpfvalidation= function(){
+
+    cpfvalue = cpf.value.trim();
+    validcpf= /(\d{3})(\d{3})(\d{3})(\d{2})/;
+    cpfErr = document.getElementById("cpf_erro");
+
+    if(cpfvalue == ""){
+        cpfErr.innerHTML = "informe seu cpf";
+    }else if(!validcpf.test(cpfvalue)){
+        cpdErr.innerHTML = "Cpf não existente";
+    }else if(cpfvalue.length != 10){
+        cpfErr.innerHTML = "O número do cpf deve conter 10 dígitos";
+    }else{
+        cpfErr.innerHTML = ""
+        return true;
+    }
+    }
+    CPF.oninput = function(){
+        cpfvalidation()
+    }
+
+
+var email = document.getElementById("email");
+var emailValidation = function(){
+    emailValue = email.value.trim();
+    validemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+    emailErr = document.getElementById('email_erro');
+
+
+    if(emailValue == ""){
+        emailErr.innerHTML = "Informe o email"
+    }else if(!validemail.test(emailValue)){
+        emailErr.innerHTML = "O endereço de email deve estar em formato válido!"
+    }else{
+        emailErr.innerHTML = ""
+        return true;
+    }
+}
+
+email.oninput = function(){
+    emailValidation();
+}
+
+var telefone = document.getElementById("telefone");
+var telefoneValidation = function(){
+    telefoneValue = celular.value.trim();
+    validtelefone = /^[0-9]*$/;
+    telefoneErr = document.getElementById('telefone_erro');
+
+    if(telefoneValue == ""){
+        telefoneErr.innerHTML = "Informe o telefone"
+    }else if(!validcelular.test(telefoneValue)){
+        telefoneErr.innerHTML = "O número do telefone deve conter apenas números"
+    }else if(telefoneValue.length != 11){
+        telefoneErr.innerHTML = "O número do telefone deve conter 11 dígitos"
+    }
+    else{
+        telefoneErr.innerHTML = ""
+        return true
+    } 
+}
+
+telefone.oninput = function(){
+    telefoneValidation();
+}
+
+</script>    
+</body>

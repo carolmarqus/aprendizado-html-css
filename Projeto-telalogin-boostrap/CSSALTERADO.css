@@ -1,0 +1,37 @@
+body {
+    background-color: #f5a4a4;
+}
+
+#form-container{
+    background-color: rgb(255, 95, 95);
+    border-radius: 20px;
+    box-shadow: .5px 10px 15px rgba(238, 87, 87, 0.2);
+    margin: 25px auto;
+    padding: 25px;
+}
+
+#form-container h1{
+
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    color: rgb(184, 45, 45);
+
+}
+
+#form-container form{
+    padding-bottom: 100px;
+}
+
+#form-container .form-control{
+    border: none;
+    border-bottom: 3px solid rgb(247, 190, 190);
+    border-radius: 0;
+}
+
+#form-container .form-control:focus{
+    box-shadow: none;
+}
+#form-container .btn:btn-{
+    color: #f5a4a4;
+}

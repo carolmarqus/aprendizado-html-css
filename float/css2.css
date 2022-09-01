@@ -1,0 +1,35 @@
+#site{
+    width: 1000px;
+    height: 700px;
+    margin-top: 130px ;
+    margin-bottom: 130px ;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: cadetblue;
+}
+#header{
+    width: 1000px;
+    height: 100px;
+    background-color: blue;
+}
+#conteudo{
+    width: 1000px;
+    height: 500px;
+    background-color: greenyellow;
+}
+#footer{
+    width: 1000px;
+    height: 100px;
+    background-color: rgb(250, 83, 208);
+}
+#left{
+    width: 500px;
+    height: 400px;
+    float: right; /*alinhamento*/
+    background-color: rgb(228, 33, 33);
+}
+#right{
+    width: 1000px;
+    height: 300px;
+    background-color: rgb(250, 247, 83);
+}

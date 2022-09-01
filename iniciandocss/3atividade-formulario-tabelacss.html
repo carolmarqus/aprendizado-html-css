@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="1atividadecss.css" rel="stylesheet">
+    <!--fazemos a linkagem do css que estara editando esse html como no exemplo acima-->
+    <title>implementação css em tabelas e formularios</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <table border="2" class="tablee">
+<!--class(classe)= atributo que utilizamos no css para criar um modificador de varias tags no html
+no css utilizamos . para abertura da classe-->
+        <form name="formulario" method="POST" aciton="">
+<!--method(método)= pode ser POST(ficara invisivel na URL(endereço da paágina) usado para senhas etc...)valores são inf.
+pode ser GET(ficará visivél na URL etão não utilizar quado tiver senhas ) não inf valores. -->
+            <tr>
+            <td id="celulasalt5"><label for="nome" ><b>Nome</b></label></td>
+<!--id(identificador)=atributo que utilizamos para modificar algo unico no html 
+no css utilizamos # para abertura do id
+label(rotulo)= utilizado para dar um nome antes ou depois do campo input 
+nesse caso está inserido antes-->
+            <td><input type="" nome="nome" placeholder="nome"> </td>
+            </tr>
+<!--input(entrada)= nessa tag criamos um campo nela podemos informar o type(modelo) que queremos nesse campo
+ex: text(texto), email(email), checkboox/radio(marcação), button(botão), date(datas), et...
+devemos informar name(nome) para identificar assim podemos criar um label(rotulo) para este campo que criamos.
+placceholder(marcador)= informa um texto dentro do campo input -->
+    
+            <tr>
+            <td id="celulasalt4"><label for="endereco"><b>Endereço</b></label></td>
+            <td><input type="text" name="endereco" placeholder="endereco" > </td>
+            </tr>
+            
+            <tr>
+            <td id="celulasalt3"><label for="telefone"><b>Telefone</b></label></td>
+            <td><input type="text" name="telefone" requerid placeholder="telefone" maxlength="12"></td><br>
+            </tr>
+    
+            <tr> 
+            <td id="celulasalt2" colspan="2"> <b>Disponibilidade de Horário </b> </td> 
+            </tr>
+    <!--aplicaçoes do conceito colspan e rowspan (mesclagem de linhas e colunas)
+    aplicaçoes de tabela com tr(linhas), td/th(colunas)-->
+            <tr>
+                <td colspan="2"><input type="checkbox" name="noturno" value="noturno">noturno</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="vespertino" value="vespertino">vespertino
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="matutino" value="matutino">matutino</td>
+            </tr>
+        
+            <tr>
+            <td id="celulasalt1" colspan="2"><b>Sexo</b></td>
+            </tr>
+    
+            <tr>
+            <td colspan="2"><input type="radio" name="sexo" value="masculino"> masculino</td>
+                </tr>
+                <tr>
+            <td colspan="2"><input type="radio" name="sexo" value="feminino"> feminino </td>
+            </tr>
+    
+            <tr>
+            <td id="celulasalt" colspan="2"><b>Estado Civil</b>
+            </tr>
+    
+            <tr>
+            <td colspan="2"><input type="radio" name="estadoCivil" value="solteiro">solteiro</td>
+            </tr>
+            <tr>
+            <td colspan="2"><input type="radio" name="estadoCivil" value="casado">casado</td>
+            </tr>
+    
+            <tr>
+            <td id="centralizarbotao" colspan="2"><INPUT type="submit" value="enviar">
+            <input type="reset" value="limpar"></td>
+            </tr>
+    
+        </form>
+    </table>
+
+
+
+</body>

@@ -1,0 +1,148 @@
+
+*{
+   color: #1b1b1b; 
+}
+
+a, i {
+    transition: 0.5;
+    text-decoration: none;
+}
+
+.center-image{
+  background-position: center;
+  background-size: cover;  
+}
+
+.btn{
+    text-decoration: none;
+    background-color: springgreen;
+    color: ghostwhite;
+    padding: 6px 17px;
+    border-radius: 1px;
+}
+
+.btn:hover {
+    background-color: greenyellow;
+    color: ghostwhite;
+}
+
+#header{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #1b1b1b;
+}
+
+#header p{
+    margin-bottom: 0;
+}
+
+#container-logo {
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    width: 45px;
+    margin-right: 16px;
+}
+
+#navbar{
+    padding: 10px;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+#navbar a{
+    width: 170px;
+    color: #1b1b1b;
+}
+
+#navbar a:hover{
+    color: springgreen;
+}
+
+.main-image{
+    height: 400px;
+    background-image: url('../imagens/imagem1.jpg');
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.main-image-info{
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+#img1{
+    background-image: url('../imagens/imagem4.jpg');
+}
+#img2{
+    background-image: url('../imagens/imagem5.jpg');
+}
+#img3{
+    background-image: url('../imagens/imagem6.jpg');
+}
+#img4{
+    background-image: url('../imagens/imagem7.jpg');
+}
+
+.small-image-container{
+    height: 350px;
+    margin-bottom: 30px;
+}
+.small-image-container-info{
+    
+    background-color: white;
+    padding: 1px;
+    position: relative;
+    left: 12px;
+    top: 75px;
+    width: 300px;
+}
+
+/* Rodapé */
+
+footer{
+border-top: 1px solid #ccc;
+height: 100px;
+padding: 20px;
+}
+
+#rede-social{
+padding: 0px;
+
+}
+.bi{
+color: rgb(11, 243, 30);
+}
+
+a:hover i{
+color:black;
+
+}
+footer p{
+text-align: center;
+padding: 10px;
+}
+#campeonato{
+text-align: center;
+margin-bottom: 30px;
+}
+
+#formulario{
+padding: 30px 100px;
+}
+
+#contato{
+padding: 30px;
+text-align: center;
+}
+
+
+
+
+
+

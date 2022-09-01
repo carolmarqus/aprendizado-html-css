@@ -1,0 +1,85 @@
+body
+{
+    background-color:rgb(0, 255, 200);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1
+{color:rgb(228, 127, 183); 
+    font: size 30px; 
+    font-family: fantasy;
+    text-align: center ;
+}
+td
+{
+    background-color: rgb(228, 127, 183);
+}
+#celulasalt{
+color:rgb(0, 255, 200);
+}
+#celulasalt1{
+    color:rgb(0, 255, 200);
+    }
+#celulasalt2{
+    color:rgb(0, 255, 200);
+    }
+    #celulasalt3{
+        color:rgb(0, 255, 200);
+        }
+        #celulasalt4{
+            color:rgb(0, 255, 200);
+            }
+            #celulasalt5{
+                color:rgb(0, 255, 200);
+                }
+#unico
+{
+    background-color: seashell;
+}
+#h1alt
+{
+    color:rgb(183, 0, 255); 
+    font: size 15px; 
+    font-family: fantasy;
+    text-align: center ;
+}
+
+h2.personalizacao2
+{ 
+  line-height: 25%;
+  font-family: fantasy;
+}
+*{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.tablee
+{   margin-right: auto;
+    margin-left: auto; 
+}
+.personalizar{
+    color:snow
+}
+.centralizar{
+    text-align: center;
+}
+#centralizarbotao{
+    text-align:right;
+}
+.inputcolor{
+    color:  rgb(228, 127, 183);
+}
+
+/* comentario*/
+
+.dvm-button{
+    color:green;
+    border-radius:20px;
+    background-color:red;
+    text-transform:uppercase;
+
+}
+.dvm-image{
+    border-radius:20px;
+    
+}

@@ -1,0 +1,78 @@
+body {
+  background-color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  color: rgb(228, 127, 183);
+  font: size 30px;
+  font-family: fantasy;
+  text-align: center;
+}
+td {
+  background-color: rgb(228, 127, 183);
+}
+#celulasalt {
+  color:  aliceblue;
+}
+#celulasalt1 {
+  color:  aliceblue;
+}
+#celulasalt2 {
+  color:  aliceblue;
+}
+#celulasalt3 {
+  color:  aliceblue;
+}
+#celulasalt4 {
+  color: aliceblue;
+}
+#celulasalt5 {
+  color: aliceblue;
+}
+#unico {
+  background-color: seashell;
+}
+#h1alt {
+  color: rgb(183, 0, 255);
+  font: size 15px;
+  font-family: fantasy;
+  text-align: center;
+}
+
+h2.personalizacao2 {
+  line-height: 25%;
+  font-family: fantasy;
+}
+* {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.tablee {
+  margin-right: auto;
+  margin-left: auto;
+}
+.personalizar {
+  color: snow;
+}
+.centralizar {
+  text-align: center;
+}
+#centralizarbotao {
+  text-align: right;
+}
+.inputcolor {
+  color: rgb(228, 127, 183);
+}
+
+/* comentario*/
+
+.dvm-button {
+  color: green;
+  border-radius: 20px;
+  background-color: red;
+  text-transform: uppercase;
+}
+.dvm-image {
+  border-radius: 20px;
+}

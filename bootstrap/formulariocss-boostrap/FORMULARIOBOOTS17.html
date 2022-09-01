@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.min.js"></script>
+    <title>formulario com bootstrap</title>
+</head>
+<body>
+    <div class="container">
+<!--agrupa em determinado espaço um grupo de tags-->
+        <div class="col-12">
+<!--divide o espaço do container de 1 a 12
+ precisa especificar em cada div o tamanho-->
+            <h2>Formulário de Inscrição</h2>
+        </div>
+    </div>
+<form>
+    <div class="container">
+        <div class="row">
+<!--row adc todos na div em uma mesma linha
+temos que dividir as tag em 12 colunas apenas-->
+<div class="col-4">
+<label for="nome" class="form-label"> Nome:</label> 
+<!--quando se trata de um formulario temos uma classe propria no bootstrap
+para label:form-labelpara input:form-control
+sempre informar name no input para atribuir no label-->
+<input type="text" class="form-control" id="nome" name="nome" required>
+</div>
+<div class="col-4">
+<label for="Rg" class="form-label">Rg:</label>
+<input type="text" class="form-control" id="Rg" name="Rg" required>
+</div>        
+<div class="col-4">
+<label for="CPF" class="form-label">CPF:</label>
+<input type="text" class="form-control" id="CPF" name="CPF" required>
+</div>      
+       </div>
+       <div class="row">
+<div class="col-3">
+<label for="Naturalidade" class="form-label">Naturalidade:</label>
+<input type="text" class="form-control" id="Naturalidade" name="Naturalidade" required>
+</div>        
+<div class="col-3">
+<label for="Estado" class="form-label">Estado:</label>
+<input type="text" class="form-control" id="Estado" name="Estado" required>
+</div>      
+<div class="col-3">
+<label for="Cidade" class="form-label">Cidade:</label>
+<input type="text" class="form-control" id="Cidade" name="Cidade" required>
+</div>      
+<div class="col-3">
+<label for="CEP" class="form-label">CEP:</label> 
+<input type="text" class="form-control" id="CEP" name="CEP" required>
+</div>
+        </div>
+        <div class="row">
+<div class="col-6">
+<label for="Endereco" class="form-label"> Endereço:</label> 
+<input type="text" class="form-control" id="Endereco" name="Endereco" required>
+</div>
+<div class="col-6">
+<label for="Referencia" class="form-label"> Ponto de Referência:</label>
+<input type="text" class="form-control" id="Referencia" name="Referencia" required>
+</div>      
+        </div>  
+        <div class="row">
+<div class="col-3">
+<label for="TelefoneCelular" class="form-label"> Número Celular:</label> 
+<input type="text" class="form-control" id="TelefoneCelular" name="TelefoneCelular" required>
+</div>
+<div class="col-3">
+<label for="TelefoneResidencial" class="form-label"> Número Residencial:</label>
+<input type="text" class="form-control" id="TelefoneResidencial" name="TelefoneResidencial" required>
+</div>        
+<div class="col-3">
+<label for="TelefoneWhatsapp" class="form-label"> Número Whatsapp:</label>
+<input type="text" class="form-control" id="TelefoneWhatsapp" name="TelefoneWhatsapp" required>
+</div>      
+<div class="col-3">
+<label for="TelefoneRecados" class="form-label"> Número para Recados: </label>
+<input type="text" class="form-control" id="TelefoneRecados" name="TelefoneRecados" required>
+</div>      
+        </div> 
+        <div class="row">
+<div class="col-6">
+<label for="email" class="form-label">E-mail:</label>
+<input type="email" class="form-control" id="email" name="email" 
+aria-describedby="emailObservacao" required>
+<div id="emailObservacao" class="form-text">Informe o seu melhor email</div>
+        </div>
+<!--mensagem de observação referente ao input do email pode ser usado 
+para validação também pois se o email/senha/etc for informado errado
+podemos inserir uma mensagem para correção do input-->
+
+
+<div class="col-6">
+<label for="senha" class="form-label">Senha:</label>
+<input type="password" class="form-control" id="senha" name="senha" placeholder="Informe a sua senha" required>
+</div>
+        </div>
+    </div>
+    <div class="mt-lg-5"></div>
+<!--quebra de linha-->
+        <div class="container">
+        <div class="row">
+<div class="col-4">
+</div>
+<!--div vazia na linha para criar espaço-->
+<div class="col-2">                
+<button type="submit" name="enviar" id="enviar">Enviar</button>               
+</div>
+<div class="col-2">                
+<button type="reset" name="cancelar" id="cancelar">Cancelar</button>               
+</div>
+<div class="col-4">
+</div>
+        </div>
+        </div>    
+</form>
+
+
+
+</body>
+</html>

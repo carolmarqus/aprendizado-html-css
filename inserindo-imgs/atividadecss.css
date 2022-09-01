@@ -1,0 +1,11 @@
+body {
+  background-color: bisque;
+  font-family: "Times New Roman", Times, serif;
+}
+div {
+  text-align: center;
+  margin: 2rem;
+}
+.radius-image {
+  border-radius: 50%;
+}

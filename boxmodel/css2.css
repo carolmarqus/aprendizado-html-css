@@ -1,0 +1,36 @@
+#site {
+  background-color: blue;
+}
+.classe1 {
+  background-color: rebeccapurple;
+  border: dotted gray 10px;
+  width: 200px;
+  height: 200px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.classe2 {
+  background-color: red;
+  border: dashed yellow 3px;
+  width: 200px;
+  height: 200px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+.classe3 {
+  background-color: aquamarine;
+  border: double pink 10px;
+  width: 200px;
+  height: 200px;
+  margin-left: 300px;
+  padding-bottom: 30px;
+}
+.classe4 {
+  background-color: black;
+  border: solid green 5px;
+  width: 200px;
+  height: 200px;
+  margin-left: 200px;
+  padding-right: 100px;
+}
